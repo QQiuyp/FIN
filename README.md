@@ -48,7 +48,7 @@ The data directory has the following structure:
 
 
 ### Train
-You will need to install the requirements, and change the settings in py file `config.py`, then run :
+You will need to install the requirements, and change the settings in `config.py`, then run :
 
 ```bash
 python train.py
