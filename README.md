@@ -28,7 +28,7 @@ The core packages we use in the project and their version information are as fol
 
 ### Dataset
 
-In this project we use DIV2K as the training dataset(which contains 800 images) and the testing dataset (which contians 100 images).
+In this project we use DIV2K as the training dataset(which contains 800 images) and the validing dataset (which contians 100 images).
 
 The data directory has the following structure:
 ```
