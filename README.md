@@ -6,7 +6,7 @@
 
 
 
-Han Fang, Yupeng Qiu, Kejiang Chen*, Jiyi Zhang, Weiming Zhang, and Ee-Chine Chang*.
+Han Fang, Yupeng Qiu, Kejiang Chen*, Jiyi Zhang, Weiming Zhang, and Ee-Chien Chang*.
 
 > This is the source code of paper FIN: Flow-based Robust Watermarking with Invertible Noise Layer for Black-box Distortions, which is received by AAAI' 23.
 
