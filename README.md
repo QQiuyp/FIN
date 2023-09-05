@@ -2,7 +2,7 @@
 
 
 
-## FIN: Flow-based Robust Watermarking with Invertible Noise Layer for Black-box Distortions
+## [FIN: Flow-based Robust Watermarking with Invertible Noise Layer for Black-box Distortions](https://ojs.aaai.org/index.php/AAAI/article/view/25633)
 
 
 
