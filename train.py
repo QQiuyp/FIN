@@ -22,7 +22,7 @@ def load(model, name):
     network_state_dict = {k: v for k, v in state_dicts['net'].items() if 'tmp_var' not in k}
     model.load_state_dict(network_state_dict)
 
-fed = FED()
+fed = FED(c.diff, c.message_length)
 fed.cuda()
 params_trainable = (list(filter(lambda p: p.requires_grad, fed.parameters())))
 
