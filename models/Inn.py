@@ -39,8 +39,8 @@ class Noise_INN(nn.Module):
 
 
 class INN(nn.Module):
-    def __init__(self):
-        super(INN, self).__init__(diff=False,length=30)
+    def __init__(self, diff=False,length=64):
+        super(INN, self).__init__()
         self.diff = diff
         self.inv1 = INN_block()
         self.inv2 = INN_block()
