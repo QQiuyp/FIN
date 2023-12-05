@@ -23,9 +23,9 @@ class INL(nn.Module):
         return out
 
 class FED(nn.Module):
-    def __init__(self):
+    def __init__(self, diff=False,length=64):
         super(FED, self).__init__()
-        self.model = INN()
+        self.model = INN(diff, length)
 
     def forward(self, x, rev=False):
 
