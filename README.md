@@ -43,6 +43,13 @@ The data directory has the following structure:
 
 ```
 
+****
+
+### White-box Noise Layers
+
+For all white-box noise layers, we directly use the publicly available code from the MBRS repository. You can find the implementation here: [MBRS Noise Layers](https://github.com/jzyustc/MBRS/tree/main/network/noise_layers).
+
+
 
 ****
 
@@ -91,8 +98,35 @@ python encode.py(decode.py) --help
 to see the description of all of the parameters.
 ****
 
+### Combined Distortions
+
+During training, the Combined Noise layer includes the following components:
+
+- **JpegSS**: with quality factor Q=50
+- **JpegTest**: with quality factor Q=50
+- **Gaussian Blur**: with sigma=2.0, kernel size=7
+- **Median Blur**:  with kernel size=7
+- **Gaussian Noise**: with variance=0.05 and mean=0
+- **Salt & Pepper Noise**: with probability=0.05
+- **Dropout**: with probability=0.4
+- **Cropout**: with height_ratio=0.7 and width_ratio=0.7
+
+#### Benchmark comparisons on invisibility and robustness against combined noise.
+
+| **Method** | VQ (dB) | Jpeg Compression (%) | S&P Noise (%) | Gaussian Noise (%)| Cropout (%) |
+|------------|---------|-----------------------|-------------------|----------------------------|---------|
+| FIN        | 41.72   | 97.07                 | 99.90             | 94.87                      | 89.26   |
+| **Method** | **VQ (dB)** |**Dropout (%)**|**Gaussian Blur (%)**| **Median Blur (%)** |**Ave (%)** |
+| FIN        | 41.72   | 99.90                | 99.90             | 98.73                      | 97.09   |
 
 
 
-Contact: [qiu_yupeng@u.nus.edu](mailto:qiu_yupeng@u.nus.edu)
+
+
+
+
+
+
+
+Contact: [qiuyupeng1999@gmail.com](mailto:qiuyupeng1999@gmail.com)
 
