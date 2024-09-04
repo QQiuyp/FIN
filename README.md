@@ -57,12 +57,16 @@ python train.py
 The log files and experiment result information will be saved in `logging` in .txt format.
 ****
 
-Some tips for training:
+#### Some tips for training:
+
 During the initial training phase, the Invertible Neural Network may exhibit instability. Based on extensive experimentation, we offer the following recommendations to help stabilize the model during this critical early stage:
 
-Use a smaller learning rate: We suggest setting the learning rate to lr = 1e-4 for the first 15 epochs.
-Increase the weight of the message loss: We recommend setting message_weight to 10,000 and stego_weight to 1 for the first 15 epochs.
-If these settings still result in the loss becoming NaN, consider restarting the training process.
+1. Use a smaller learning rate: We suggest setting the learning rate to lr = 1e-4 for the first 15 epochs.
+
+2. Increase the weight of the message loss: We recommend setting message_weight to 10,000 and stego_weight to 1 for the first 15 epochs.
+
+3. If these settings still result in the loss becoming NaN, consider restarting the training process.
+
 After successfully navigating the initial 15 epochs, you can adjust the message_weight and stego_weight according to your specific needs for robustness or visual quality.
 
 ### Test
