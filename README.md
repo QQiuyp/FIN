@@ -128,5 +128,10 @@ During training, the Combined Noise layer includes the following components:
 
 
 
-Contact: [qiuyupeng1999@gmail.com](mailto:qiuyupeng1999@gmail.com)
+
+## 📬 Contact
+
+For questions or issues, please open a GitHub issue or contact:
+
+- 👨‍💻 **Yupeng Qiu** - [qiu_yupeng@u.nus.edu](mailto:qiu_yupeng@u.nus.edu)
 
